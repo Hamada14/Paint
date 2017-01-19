@@ -48,6 +48,18 @@ public class UpperPanelBar extends JPanel {
     initControlBox();
   }
 
+  public void setOnlineMode(){
+	  for(int i = 0; i < 7; i++){
+		  controllerButton[i].setEnabled(false);
+	  }
+  }
+  
+  public void setOflineMode(){
+	  for(int i = 0; i < 7; i++){
+		  controllerButton[i].setEnabled(true);
+	  }
+  }
+  
   private void initControlBut() {
     controllerButton[ADD] = makeControlButtons("dep/icons/blue-plus-icon.png", ADD);
     controllerButton[UNDO] = makeControlButtons("dep/icons/Undo-icon.png", UNDO);

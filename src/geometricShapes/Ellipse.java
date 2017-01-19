@@ -6,8 +6,9 @@ import java.awt.Point;
 
 import colorManagement.ColorBundle;
 
-public class Ellipse extends CustomShape {
+public class Ellipse extends CustomShape implements java.io.Serializable {
 
+	private static final long serialVersionUID = 4711041442191335993L;
 	private int a;
 	private int b;
 	private Point ellipseCntr;
@@ -23,7 +24,7 @@ public class Ellipse extends CustomShape {
 		b = Math.abs(refPnt.y - cntrPnt.y);
 		ellipseCntr = new Point();
 		ellipseCntr.setLocation((cntrPnt.x + refPnt.x) / 2, (cntrPnt.y + refPnt.y) / 2);
-		
+
 	}
 
 	@Override

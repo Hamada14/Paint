@@ -6,7 +6,9 @@ import java.awt.Point;
 
 import colorManagement.ColorBundle;
 
-public class Line extends CustomShape {
+public class Line extends CustomShape implements java.io.Serializable {
+
+	private static final long serialVersionUID = 380120927075630180L;
 
 	public Line(Point start, Point end, ColorBundle colorBundle) {
 		setColorBundle(colorBundle);
